@@ -18,4 +18,5 @@ require("davidkhanks.plugins.lsp.lsp-zero")
 -- require("davidkhanks.plugins.lsp.lspconfig")
 
 require("davidkhanks.plugins.autopairs")
+require("davidkhanks.plugins.neoscroll")
 require("davidkhanks.plugins.treesitter")

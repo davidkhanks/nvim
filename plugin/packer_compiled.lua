@@ -159,6 +159,11 @@ _G.packer_plugins = {
     path = "/Users/davidhanks/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["neoscroll.nvim"] = {
+    loaded = true,
+    path = "/Users/davidhanks/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
+    url = "https://github.com/karb94/neoscroll.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/Users/davidhanks/.local/share/nvim/site/pack/packer/start/nvim-autopairs",

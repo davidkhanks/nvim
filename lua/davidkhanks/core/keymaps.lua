@@ -15,6 +15,7 @@ vim.keymap.set("n", "<leader>wd", "<C-W>q") -- Close window
 vim.keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 
 -- Buffer commands
+vim.keymap.set('n', '<leader>bd', ':bp|sp|bn|bd<CR>') -- save this buffer then, kill all other buffers
 vim.keymap.set('n', '<leader>bD', ':w|%bd|e#<CR>') -- save this buffer then, kill all other buffers
 vim.keymap.set('n', '<leader>QQ', ':w|%bd|e#<CR>:q!') -- save this buffer then, kill all other buffers
 

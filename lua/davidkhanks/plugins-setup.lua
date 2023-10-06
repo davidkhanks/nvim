@@ -136,6 +136,8 @@ return packer.startup(function(use)
     use({"windwp/nvim-autopairs", commit = "7b3eb9b"})
     use({"windwp/nvim-ts-autotag", commit = "6be1192"})
 
+    use({'karb94/neoscroll.nvim', commit = "4bc0212"})
+
 
     if packer_bootstrap then
         require("packer").sync()
