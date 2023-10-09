@@ -31,7 +31,7 @@ return packer.startup(function(use)
 
     -- Theme(s)
     use("bluz71/vim-nightfly-guicolors")
-    use("navarasu/onedark.nvim")
+    use({"navarasu/onedark.nvim", commit = "826fb77"})
 
     -- use Ctrl + hjkl to navigate windows
     use({"christoomey/vim-tmux-navigator", commit = "7db70e0"})
@@ -41,6 +41,8 @@ return packer.startup(function(use)
 
     -- surround chars
     use({"tpope/vim-surround", commit = "3d188ed"})
+
+    use({"kylechui/nvim-surround", commit = "1c2ef59"})
 
     -- replace text from register
     use({"vim-scripts/ReplaceWithRegister", commit = "832efc2"})
