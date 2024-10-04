@@ -21,6 +21,7 @@ vim.keymap.set('n', '<leader>QQ', ':w|%bd|e#<CR>:q!') -- save this buffer then, 
 
 -- File commands
 vim.keymap.set('n', '<leader>fs', ':write<CR>')
+vim.keymap.set('n', '<leader>fS', ':wall<CR>')
 
 -- Movement commands
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv'")
@@ -39,6 +40,10 @@ vim.keymap.set("x", "<leader>p", "\"_dp")
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+y")
+
+-- Paste from system clipboard
+vim.keymap.set("n", "<leader>pp", "\"+p")
+vim.keymap.set("v", "<leader>pp", "\"+p")
 
 -- Delete to system clipboard
 vim.keymap.set("n", "<leader>d", "\"_d")
@@ -81,4 +86,7 @@ vim.keymap.set('n', '<leader>fb', "<cmd>Telescope buffers<CR>")
 vim.keymap.set('n', '<C-p>', "<cmd>Telescope git_files<CR>")
 vim.keymap.set('n', '<leader>ggb', "<cmd>Telescope git_branches<CR>")
 vim.keymap.set('n', '<leader>ggs', "<cmd>Telescope git_status<CR>")
+vim.keymap.set('n', '<leader>gsl', "<cmd>Telescope git_stash<CR>")
+-- vim.keymap.set('n', '<leader>gw', "<cmd>lua require('telescope').extensions.git_worktree.git_worktrees()<CR>")
+-- vim.keymap.set('n', '<leader>gwc', "<cmd>lua require('telescope').extensions.git_worktree.create_git_worktree()<CR>")
 

@@ -60,10 +60,10 @@ return packer.startup(function(use)
     use({"nvim-lualine/lualine.nvim", commit = "45e27ca"})
 
     -- Toggles opposite values ie true -> false
-    use({'nguyenvukhang/nvim-toggler', commit = "c10828c"})
+    use({"nguyenvukhang/nvim-toggler", commit = "c10828c"})
 
     -- Dressing up inputs
-    use ({'stevearc/dressing.nvim', commit = "c1e1d5f"})
+    use ({"stevearc/dressing.nvim", commit = "c1e1d5f"})
 
     -- Fuzzy finding
     use({ "nvim-telescope/telescope-fzf-native.nvim", commit = "6c921ca", run = "make" })
@@ -93,7 +93,7 @@ return packer.startup(function(use)
     use {
         'VonHeikemen/lsp-zero.nvim',
         commit = "abd2208",
-        branch = 'v2.x',
+        branch = "v2.x",
         requires = {
             -- LSP Support
             {"neovim/nvim-lspconfig", commit = "ede4114"},             -- Required
@@ -114,16 +114,18 @@ return packer.startup(function(use)
         }
     }
 
-    use({'theprimeagen/harpoon', commit = "21f4c47"})
+    -- use({"theprimeagen/harpoon", commit = "21f4c47"})
+    use({"theprimeagen/harpoon", commit = "ccae1b9"})
+
 
     -- Keep track of undos
-    use({'mbbill/undotree', commit = "0e11ba7"})
+    use({"mbbill/undotree", commit = "0e11ba7"})
 
     -- Git utility
-    use({'tpope/vim-fugitive', commit = "99db68d"})
+    use({"tpope/vim-fugitive", commit = "99db68d"})
 
     -- Git side bar markers
-    use({'lewis6991/gitsigns.nvim', commit = "f0e9f5d"})
+    use({"lewis6991/gitsigns.nvim", commit = "f0e9f5d"})
 
     -- treesitter
     use({
@@ -138,7 +140,14 @@ return packer.startup(function(use)
     use({"windwp/nvim-autopairs", commit = "7b3eb9b"})
     use({"windwp/nvim-ts-autotag", commit = "6be1192"})
 
-    use({'karb94/neoscroll.nvim', commit = "4bc0212"})
+    -- smooth scrolling buffers
+    use({"karb94/neoscroll.nvim", commit = "4bc0212"})
+
+    use({"ThePrimeagen/git-worktree.nvim", commit = "d7f4e25"})
+
+    -- Visual indicators for marks
+    use({"chentoast/marks.nvim", commit = "74e8d01"})
+
 
 
     if packer_bootstrap then

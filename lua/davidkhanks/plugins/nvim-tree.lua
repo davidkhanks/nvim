@@ -14,8 +14,8 @@ nvimtree.setup({
         dotfiles = false,
         git_clean = false,
         no_buffer = false,
-        custom = { "^.git$" },
-        exclude = { "local.py", ".devhome" },
+        custom = { "^.git$", "^__pycache__$" },
+        exclude = { "local.py", ".devhome", ".env" },
     },
     git = {
         show_on_open_dirs = false,
